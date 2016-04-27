@@ -16,4 +16,8 @@ public class Rectangles {
   public boolean isSquare() {
     return mLength == mWidth;
   }
+
+  public int area() {
+    return mLength * mWidth;
+  }
 }

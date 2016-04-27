@@ -24,6 +24,11 @@ public class App {
       Rectangles myRectangles = new Rectangles(length, width);
       model.put("myRectangles", myRectangles);
 
+      if (myRectangles.isSquare()) {
+        Cube myCube = new Cube(myRectangles);
+        model.put("myCube", myCube);
+      }
+
       model.put("template", "templates/rectangles.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());

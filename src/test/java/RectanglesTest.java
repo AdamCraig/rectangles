@@ -28,4 +28,10 @@ public class RectanglesTest {
     Rectangles testRectangles = new Rectangles(4, 4);
     assertEquals(true, testRectangles.isSquare());
   }
+
+  @Test
+  public void area_returnsTheAreaOfTheRectangles_450() {
+    Rectangles testRectangles = new Rectangles(15, 30);
+    assertEquals(450, testRectangles.area());
+  }
 }
